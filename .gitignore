@@ -11,6 +11,9 @@ vendor/
 _obj
 _test
 
+# IDE generated files
+.idea/
+
 # Architecture specific extensions/prefixes
 *.[568vq]
 [568vq].out
