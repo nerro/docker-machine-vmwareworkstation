@@ -1,7 +1,5 @@
 /*
  * Copyright 2014 VMware, Inc.  All rights reserved.  Licensed under the Apache v2 License.
- */
-/*
  * Copyright 2015 Gonzalo Peci  All rights reserved.  Licensed under the Apache v2 License.
  */
 
@@ -404,10 +402,10 @@ func (d *Driver) Start() error {
 		guestFolder = "/Users"
 		guestCompatLink = "/Home"
 	case "windows":
-		shareName = "Users"
-		shareDir = `C:\Users\`
-		guestFolder = "/Users"
-		guestCompatLink = "/c/Users"
+		shareName = "d"
+		shareDir = `D:\`
+		guestFolder = "/d"
+		guestCompatLink = "/d"
 	}
 
 	if shareDir != "" {
@@ -460,10 +458,10 @@ func (d *Driver) Restart() error {
 		guestFolder = "/Users"
 		guestCompatLink = "/Home"
 	case "windows":
-		shareName = "Users"
-		shareDir = `C:\Users\`
-		guestFolder = "/Users"
-		guestCompatLink = "/c/Users"
+		shareName = "d"
+		shareDir = `D:\`
+		guestFolder = "/d"
+		guestCompatLink = "/d"
 	}
 
 	if shareDir != "" {
